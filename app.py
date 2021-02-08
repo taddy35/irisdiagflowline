@@ -3,9 +3,12 @@ from flask import Flask, request, make_response
 import json
 import pickle
 from flask_cors import cross_origin
+from sklearn.ensemble import RandomForestClassifier
+
 
 app = Flask(__name__)
 model = pickle.load(open('rf.pkl', 'rb'))
+
 
 @app.route('/')
 def hello():
