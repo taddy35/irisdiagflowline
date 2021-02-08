@@ -3,7 +3,7 @@ from flask import Flask, request, make_response
 import json
 import pickle
 from flask_cors import cross_origin
-from sklearn.ensemble import RandomForestClassifier
+#from sklearn.ensemble import RandomForestClassifier
 
 
 app = Flask(__name__)
